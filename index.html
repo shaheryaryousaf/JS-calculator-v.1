@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Calculator</title>
+</head>
+
+<body>
+    <section id="calculator" class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <h1>Calculator</h1>
+                    <br />
+                    <div class="col-body">
+                        <div class="input">
+                            <input type="text" class="form-control" id="result" />
+                        </div>
+                        <div class="buttons">
+                            <div class="row">
+                                <div class="col"><button class="btn btn-primary" onclick="clearInput()">C</button></div>
+                                <div class="col"><button class="btn btn-primary" onclick="getClean()">←</button></div>
+                                <div class="col"><button class="btn btn-primary"
+                                        onclick="getSquare()">x<sup>2</sup></button></div>
+                                <div class="col"><button class="btn btn-primary" onclick="getNum('%')">%</button></div>
+                                <div class="col"><button class="btn btn-primary" onclick="getNum(Math.PI)">π</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col"><button class="btn btn-primary" onclick="getSin()">sin</button></div>
+                                <div class="col"><button class="btn btn-primary" onclick="getSquareRoot()">√x</button>
+                                </div>
+                                <div class="col"><button class="btn btn-primary" onclick="getNum('(')">(</button>
+                                </div>
+                                <div class="col"><button class="btn btn-primary" onclick="getNum(')')">)</button>
+                                </div>
+                                <div class="col"><button class="btn btn-primary" onclick="getNum('/')">/</button></div>
+                            </div>
+                            <div class="row">
+                                <div class="col"><button class="btn btn-primary" onclick="getCos()">cos</button></div>
+                                <div class="col"><button class="btn btn-primary" onclick="getNum('7')">7</button></div>
+                                <div class="col"><button class="btn btn-primary" onclick="getNum('8')">8</button></div>
+                                <div class="col"><button class="btn btn-primary" onclick="getNum('9')">9</button></div>
+                                <div class="col"><button class="btn btn-primary" onclick="getNum('*')">×</button></div>
+                            </div>
+                            <div class="row">
+                                <div class="col"><button class="btn btn-primary" onclick="getTan()">tan</button></div>
+                                <div class="col"><button class="btn btn-primary" onclick="getNum('4')">4</button></div>
+                                <div class="col"><button class="btn btn-primary" onclick="getNum('5')">5</button></div>
+                                <div class="col"><button class="btn btn-primary" onclick="getNum('6')">6</button></div>
+                                <div class="col"><button class="btn btn-primary" onclick="getNum('-')">-</button></div>
+                            </div>
+                            <div class="row">
+                                <div class="col"><button class="btn btn-primary" onclick="getLog()">log</button></div>
+                                <div class="col"><button class="btn btn-primary" onclick="getNum('1')">1</button></div>
+                                <div class="col"><button class="btn btn-primary" onclick="getNum('2')">2</button></div>
+                                <div class="col"><button class="btn btn-primary" onclick="getNum('3')">3</button></div>
+                                <div class="col"><button class="btn btn-primary" onclick="getNum('+')">+</button></div>
+                            </div>
+                            <div class="row">
+                                <div class="col"><button class="btn btn-primary" onclick="getRan()">ran</button></div>
+                                <div class="col"><button class="btn btn-primary" onclick="getNum(Math.E)">e</button>
+                                </div>
+                                <div class="col"><button class="btn btn-primary" onclick="getNum('0')">0</button></div>
+                                <div class="col"><button class="btn btn-primary" onclick="getNum('.')">.</button></div>
+                                <div class="col"><button class="btn btn-primary" id="equalBtn"
+                                        onclick="getResult()">=</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <p>Designed and Developed By: <i><b><a href="https://github.com/shary12" target="_blank">Shaheryar
+                                    Yousaf</a></b></i></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
